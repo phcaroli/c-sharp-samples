@@ -1,4 +1,9 @@
 # C#
+
+<h2>Exemplos C#</h2>
+
+<p>Jogo de Dados: Usando Random e IF </p>
+<div class="highlight highlight-source-shell"><pre> 
 // Declarando variaveis
 
 int jogada1;
@@ -48,3 +53,31 @@ else
     Console.WriteLine("Sorry, you lose.");
 }
 
+</div></prev>
+
+<p>Gerador de Números da Megasena: Usando Random e While </p>
+<div class="highlight highlight-source-shell"><pre> 
+
+// Gerador de numeros Mega Sena:
+
+int num1;
+int num2;
+int num3;
+int num4;
+int num5;
+int num6;
+int bolao = 0;
+
+while (bolao < 101) {
+
+Random numeros = new Random();
+num1 = numeros.Next(1,10);
+num2 = numeros.Next(10,21);
+num3 = numeros.Next(21,31);
+num4 = numeros.Next(3,41);
+num5 = numeros.Next(41,51);
+num6 = numeros.Next(51,61);
+
+Console.WriteLine("Números: " + num1+ ", " + num2+ ", " + num3+ ", " + num4+ ", " + num5+ ", " + num6+ "\n ");
+bolao++;
+}
