@@ -82,6 +82,8 @@ Console.WriteLine("Números: " + num1+ ", " + num2+ ", " + num3+ ", " + num4+ ",
 bolao++;
 }
 
+</div></pre>
+
 <p>Criando Matriz Smples </p>
 <div class="highlight highlight-source-shell"><pre> 
 
