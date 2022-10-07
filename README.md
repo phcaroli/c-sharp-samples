@@ -84,7 +84,7 @@ bolao++;
 
 </div></pre>
 
-<p>Criando Matriz Smples </p>
+<p>Criando Matriz Simples </p>
 <div class="highlight highlight-source-shell"><pre> 
 
 
@@ -110,3 +110,19 @@ Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
 // Verificando tamanho da matriz
 Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders to process.");
 </div></pre>
+
+<p>Criando Matriz e usando função Foreach para Loop </p>
+<div class="highlight highlight-source-shell"><pre> 
+
+int[] inventory = { 200, 450, 700, 175, 250 };
+int sum = 0;
+int bin = 0;
+
+foreach (int items in inventory)
+{
+    sum += items;
+    bin++;
+    Console.WriteLine($"Bin {bin} = {items} items (Running total: {sum})");
+}
+Console.WriteLine($"Total: {sum}");
+</div></prev>
